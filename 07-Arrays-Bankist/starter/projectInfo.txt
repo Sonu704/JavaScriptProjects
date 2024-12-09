@@ -1,0 +1,53 @@
+info ---
+ on line 64 we have made display function which displays the array elements on web page and also it inserts the elements in design manner
+1. containerMovements.innerHTML is set to ' '(empty) bcz alredy two elements were hard coeded there so we wish to hide or remove them .
+2. next we have used the for each mathod to access easch element of array and perform certain action on each element.
+3. on line 68  we are checking the condition so if amont is > 0 it should write the deposite on the on dom tree and for writing that we have removed the 'deposite' hard coded word and insertd according (which is based on condition.)word using this {}. on line 71.
+and we have used $mov so that it inserts the value.
+
+we used insertAdjacentHTml to insert the html text on specified position in dom
+
+
+----------------------------------------------------
+initially aim of userName function was to just loop through the user name and just take a first letter of each word of each user..
+
+after collecting that we simply have to do this for each user bcz in userName funct we are initially doing only for one user 
+
+//see the reason of commenting this function and more theory of it in .txt file
+/*
+const user = accounts.map(function (account) {
+  const acoundHolderName = account.owner;
+  return userName(acoundHolderName);
+});
+
+console.log(user);
+
+so that's why i created user function used map inside that and this function will take each account and perform the task .. but note that map function creates the new array and we don't want that it is unnecessary 
+for that i'am making changes in userName function only.
+
+
+after modifing the userName i'am just looping each account and creating new property on each account conating the 1st later of each word
+-------------------------------------------------
+
+
+in the function calcDisplaySummery we are basically calculating all the bottom elements ..
+and here we are using the chaining of method so what is chaining basically?
+
+when we peform method chaining the 1 st chain will perform the operation and return the result and on that result the second chain method will work and so on..
+
+only 1 thing here to keep in mind that we have to perform the chaining in a such a way that the second method can work on resultant output . for eg you can perform reduce method 1st and then chain that method with filter bcz the reduce will return the single value and the aim of filter is to loop through the array and then filter out the array elements..if you do so it will conflict
+
+--------------------------------------------------
+
+adding eventlistener to btnlogin --
+the preventDefault () method is basically used to stop happing the default activity when the btn is click and the logged in event happen..
+
+find function is use dto find the first occurance of the elemnt and it takes the callback function
+we changed the text of the lable using lablename.textcontent
+
+we use opacity to hide or display something
+
+use blur function to remove or hide cursor
+
+
+---------------------------------------------

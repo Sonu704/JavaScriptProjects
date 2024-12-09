@@ -1,0 +1,21 @@
+// styling
+1. in js when we use any property name to set it's value it should be in camel case like backgroundColor .
+
+2. in js when ever we set any value we need to include it's unit. %,px,rem etc..
+
+3. in js we use .className in metheod parameter of css selectors method only like querySelector , querySelector  and in these methods only we use # to access the id.
+
+
+///////////////////////////////////////////////////////
+
+implemeting the smooth scrolling effect.
+
+Element.getBoundingClientRect() - this method returns the DomRect object provideing info above size , position which inclues the width , height , top ,bootom etc. and whatever info it is returns is releted to is viewport..
+means suppose you have the button at certain positiona and u pressed it it will give you 1 object..then u scroll down littele bit and pressed the button again then whatever info the object returns it will be different then the first 1.
+
+getBoundingClientRect() is give output reletive to its view port.
+
+///////////////////////////////////////////
+in the handle hover function we are first checking if the target (link which is pressed) contains the nav_link classs and if contains then we are getting that target link ..
+then for implimenting the event deligation  we have selected closest parent element i.e nav and under that we have selcted all nav links and checked if the nav link is same as target link if yes we set opacity value 1 for that and for others we have set 0.5 opacity .
+we have bound the bind method to handelover and the value we have passed in bind method is set as this value in handelover ...bind value is always refers as this ..
